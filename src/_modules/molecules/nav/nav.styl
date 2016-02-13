@@ -3,6 +3,12 @@
 
 .header-menu-nav
   &-items
+    @media screen and (min-width: 1200px) {
+      display flex
+      justify-content: space-between
+      align-items center
+      position relative
+    }
     @media screen and (max-width: 1200px)
       display none
       position absolute
@@ -15,12 +21,6 @@
       border-bottom 2px solid $color3
       & li
         width 100%
-
-    @media screen and (min-width: 1201px)
-      display flex
-      justify-content: space-between
-      align-items center
-      position relative
 
   &-items-how
     background $color2
@@ -58,3 +58,6 @@
 
 .game-how
   position relative
+
+.hidden
+  display flex

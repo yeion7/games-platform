@@ -7,5 +7,5 @@ $('#login').click(function(){
 });
 
 $('#toggleNav').click(function(){
-  $('.header-menu-nav-items').slideToggle('show','linear');
+  $('.header-menu-nav-items').toggleClass('hidden');
 });
