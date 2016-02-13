@@ -1,0 +1,21 @@
+include ../../atoms/pista/pista.jade
+include ../../atoms/respuesta/respuesta.jade
+
+mixin multipalabra(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    div(class="game-card-title titleJuego2")
+      div(class="multipalabra_label")
+    div(class="game-card-body")
+      +pista()
+  
+      div(class="game-card-body-pregunta")
+        span(class="game-card-body-pregunta-palabra") palabra
+        span(class="game-card-body-pregunta-palabra") palabra
+        span(class="game-card-body-pregunta-palabra") palabra
+        span(class="game-card-body-pregunta-palabra") palabra
+  
+      
+      +respuesta()

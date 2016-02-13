@@ -1,0 +1,23 @@
+mixin login(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.text = spec.text || 'texto por defecto'
+
+
+  a(class=spec.__class class="header-menu-button buttonPrimary" id="login")&attributes(attributes)
+    if block
+      block
+    else
+      != spec.text
+  
+
+  div(class="form-container")
+    form(class="form-login")
+      i(class="icon-phone")
+      input(type="text" placeholder="+569 111111111")
+      i(class="icon-lock")
+      input(type="password" placeholder="xxxx")
+      a(type="submit" id="login" class="form-login-button")
+        i(class="icon-arrow")
+      a(href="#") olvidé mi contraseña
+      a(href="#") registrate

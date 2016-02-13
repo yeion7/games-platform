@@ -1,0 +1,35 @@
+extends ../_layouts/base
+// include organisms
+include ../_modules/atoms/sala/sala.jade
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main(class="juego fondo-naranja")
+    +sala() 
+    
+    div(class="game-container")
+      img(class="game-person" src="../images/character_prejuego.png")
+      div(class="game-card")
+        div(class="game-card-title titleJuego3")
+          div(class="adivinaImange_label")
+        div(class="game-card-body")
+          div(class="game-card-body-text")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore labore perferendis autem veniam architecto 
+          
+          form(action="" class="game-card-body-form")
+            div(class="game-card-body-options")
+              img(src="http://lorempixel.com/200/200/", alt="imagen" class="game-card-body-image")
+              input(type="text" class="game-card-body-respuesta" placeholder="Escribe tu respuesta") 
+                          
+            button(type="submit" class="game-card-body-enviar buttonPrimary") Jugar  
+              i(class="icon-play")
+              
+          div(class="game-card-body-seleccion")
+            a(href="../juego2/index.html") &lt;
+            span(class="game-card-body-seleccion-actual")  03 
+            span /
+            span(class="game-card-body-seleccion-niveles")  04 
+            a(href="../juego4/index.html") &gt;

@@ -1,0 +1,22 @@
+include ../../atoms/pista/pista.jade
+include ../../atoms/respuesta/respuesta.jade
+
+
+mixin adivinapista(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    div(class="game-card-title titleJuego4")
+      div(class="adivinaPista_label")
+    div(class="game-card-body")
+      +pista()
+
+      
+      div(class="game-card-body-pregunta")
+        span(class="game-card-body-pregunta-llaves") &#123;
+        span(class="game-card-body-pregunta-parrafo")  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        span(class="game-card-body-pregunta-llaves") &#125;          
+  
+      
+      +respuesta()

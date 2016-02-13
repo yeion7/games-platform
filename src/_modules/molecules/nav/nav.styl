@@ -1,0 +1,60 @@
+// nav styles
+@import '../../atoms/button/button.styl'
+
+.header-menu-nav
+  &-items
+    @media screen and (max-width: 1200px)
+      display none
+      position absolute
+      flex-direction column
+      z-index 200
+      top 78px
+      left 0
+      width 100%
+      background white
+      border-bottom 2px solid $color3
+      & li
+        width 100%
+
+    @media screen and (min-width: 1201px)
+      display flex
+      justify-content: space-between
+      align-items center
+      position relative
+
+  &-items-how
+    background $color2
+    z-index 300
+    position absolute
+    width 28%
+    top 80px
+    border-radius 8px
+    display none
+    & a:hover
+      background $color3
+      color white
+    & li:last-child
+      margin-bottom 10px
+
+    &:before
+      content ""
+      width:0px;
+      height:0px;
+      border-left:9px solid transparent;
+      border-right:8px solid transparent;
+      border-bottom:8px solid $color2 ;
+      font-size:0px;
+      line-height:0px;
+      position relative
+      top -17px
+      left 40%
+    @media screen and (max-width: 1200px)
+      position relative
+      top -10px
+      width 100%
+      &:before
+        content ""
+        border none
+
+.game-how
+  position relative

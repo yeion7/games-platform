@@ -1,0 +1,65 @@
+// Normalize Styles
+@import '../../node_modules/normalize.css/normalize.css';
+
+// Import Modules
+@import './global.styl';
+@import './sprite.styl';
+@import './fonts.styl';
+
+@import '../_modules/organisms/header/header.styl';
+@import '../_modules/molecules/card/card.styl';
+@import '../_modules/molecules/options/options.styl';
+@import '../_modules/molecules/score/score.styl';
+
+@import '../_modules/atoms/sala/sala.styl';
+
+// Box sizing partial styles
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+
+
+
+
+.juego
+  width 100%
+  height 90%
+  overflow hidden
+  position relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.game
+  &-container
+    display flex
+    flex-direction column
+  &-person
+    width: 400px
+    height 210px
+    @media screen and (max-width: 768px) {
+      width 350px
+    }
+
+.tubosEnsayo
+  @media screen and (max-width: 1200px) {
+    width: 280px
+  }
+
+.personaje
+    @media screen and (max-width: 1200px) {
+      right -80px
+      bottom -50px
+    }
+
+
+.personaje
+.tubosEnsayo
+  @media screen and (max-width: 850px) {
+    display: none
+  }

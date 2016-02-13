@@ -1,0 +1,16 @@
+include ../../atoms/timer/timer.jade
+
+mixin score(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    img(src="../images/trofeo.png", alt="")
+    div(class="game-score-stars")
+      i(class="icon-star")
+      span(id="stars") 6.737
+    div(class="game-score-coin")
+      img(src="../images/creditos.png", alt="")
+      span(id="coins") 50
+    +timer()
+    

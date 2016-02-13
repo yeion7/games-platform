@@ -1,0 +1,13 @@
+mixin sala(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  a(class=spec.__class href="#" class="juego-sala")&attributes(attributes)
+    span( class="juego-sala-text-open") SALA DE JUEGOS
+    span( class="juego-sala-text-close") X
+    
+  div(class="juego-sala-juegos" id="juegosDisponibles")
+    img(class="juego-sala-juegos-juego" src="http://lorempixel.com/200/200/")
+    img(class="juego-sala-juegos-juego" src="http://lorempixel.com/200/200/")
+    img(class="juego-sala-juegos-juego" src="http://lorempixel.com/200/200/")
+    img(class="juego-sala-juegos-juego" src="http://lorempixel.com/200/200/")

@@ -1,0 +1,54 @@
+// sala styles
+.juego
+  &-sala
+    background white
+    position absolute
+    top 40%
+    left -5%
+    padding 5em
+    border-radius 50%
+    transform translate(-50%, -50%)
+    transform rotate(270deg)
+
+    @media screen and (max-width: 1024px)
+      display none
+
+
+    &-text-open
+      cursor: pointer
+      position: absolute
+      top: 110px
+      left: 17px
+      font-size .9em
+      color: $color1_hover
+      font-weight: 600
+
+    &-text-close
+      cursor: pointer
+      position: absolute
+      top: 10%
+      left: 45%
+      font-size .9em
+      color: $color1_hover
+      font-weight: 600
+      font-size 2em
+
+    &-juegos
+      display none
+      position absolute
+      left 10%
+      top 50%
+      transform translate(-50%, -50%)
+
+      &-juego
+        width 80px
+        height 80px
+        display block
+        border-radius 50%
+        border 4px solid $color2
+        margin 10px 0
+        &:hover
+          transform scale(1.2)
+
+.rotate
+  transform rotate(450deg)

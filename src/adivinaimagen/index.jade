@@ -1,0 +1,22 @@
+extends ../_layouts/base
+
+include ../_modules/molecules/adivinaimagen/adivinaimagen.jade
+include ../_modules/molecules/score/score.jade
+include ../_modules/molecules/options/options.jade
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main(class="juego fondo-rojo")
+    
+    img(src="../images/tubosEnsayo.png", alt="tubos de ensayo" class="tubosEnsayo")
+    
+    div(class="character_premio personaje")
+    
+    div(class="game-container")
+      +score(class="game-score")
+      +adivinaimagen(class="game-card")
+      +options(class="game-options")
+        

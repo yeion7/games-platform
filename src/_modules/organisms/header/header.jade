@@ -1,0 +1,19 @@
+include ../../molecules/nav/nav.jade
+include ../../molecules/login/login.jade
+
+mixin header(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  header(class=spec.__class)&attributes(attributes)
+    i(class="icon-menu header-responsive" id="toggleNav")
+
+    div(class="header-logos")
+      img(src="../images/logo.png" class="header-logos-logo")
+      div(class="header-logos-line")
+      img(src="../images/marca.png" class="header-logos-marca")     
+      
+      
+    div(class="header-menu")
+      +nav()
+      +login() Iniciar

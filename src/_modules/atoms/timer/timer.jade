@@ -1,0 +1,6 @@
+mixin timer(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  svg(class=spec.__class id="svg" class="game-score-time")&attributes(attributes)
+    path(id="timer" fill="#FF8F00")

@@ -1,0 +1,8 @@
+mixin respuesta(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class action="" class="game-card-body-form")&attributes(attributes)
+    div(class="game-card-body-options")
+      input(type="text" class="game-card-body-respuesta" placeholder="Escribe tu respuesta")
+      i(class="icon-eraser game-options-eraser")

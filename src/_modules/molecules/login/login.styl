@@ -1,0 +1,54 @@
+// login styles
+.form-container
+  position absolute
+  z-index 100
+  top 80px
+  right 5px
+  width 300px
+  height 320px
+  background $color2
+  border-radius 8px
+  padding 4px
+  display none // remover para ver
+
+.form-login
+  width 100%
+  height 100%
+  display flex
+  flex-direction column
+  align-items center
+  justify-content space-around
+
+  & input
+    background white
+    border none
+    width 80%
+    border-bottom 1px solid $color3
+    text-align center
+    letter-spacing 1px
+
+  & i
+    color $color3
+
+  & a
+    text-transform uppercase
+    letter-spacing 1px
+    font-size .8em
+    font-weight 600
+    color black
+    &:hover
+      color $color3
+  &-button
+    cursor pointer
+
+  &:before
+    content ""
+    width:0px;
+    height:0px;
+    border-left:9px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid $color2 ;
+    font-size:0px;
+    line-height:0px;
+    position relative
+    top -17px

@@ -1,0 +1,206 @@
+// card styles
+@import '../_modules/atoms/respuesta/respuesta.styl';
+
+
+.game
+
+  &-card
+    width: 400px
+    min-height: 430px
+    @media screen and (max-width: 768px) {
+      width 350px
+    }
+
+    &-title
+      weidth 100%
+      height 25%
+      border-radius 10px 10px 0 0
+      display flex
+      justify-content center
+      align-items center
+
+    &-body
+      background $color2
+      border-radius 0 0 10px 10px
+      padding .8em
+      width 100%
+      height 75%
+      display flex
+      flex-direction column
+      justify-content space-between
+      align-items center
+
+      // prejuego
+
+
+      &-text
+        width 90%
+        text-align center
+        color darken($color1, 60%)
+        margin 8px 0
+
+
+      &-optionWords
+        width 90%
+        display flex
+        justify-content space-between
+
+        &-word
+          background #EDD16E
+          color #6C583F
+          padding .3em 1em
+          border-radius 3px
+
+      &-options
+        width 100%
+        display flex
+        justify-content space-between
+        align-items center
+
+      &-image
+        width 80px
+        height 80px
+        border-radius 50%
+        margin-right 10px
+        flex none
+
+      &-adivinaPista
+        flex 1 1 20%
+        margin-right 10px
+        display flex
+
+        &__llaves
+          margin 3px;
+          font-size 5em
+          color $colorGame4
+
+      // end prejuego
+
+      // cards
+
+      &-help
+        width 90%
+        height 20%
+        display flex
+        justify-content space-around
+        align-items center
+
+        &-icon
+          color $color2
+          padding .4em
+          border-radius 50%
+          background $color3
+          cursor pointer
+          & + label
+            color $color3
+            font-weight 600
+            cursor pointer
+
+        &-text
+          display none
+          width 70%
+          text-align center
+
+      &-pregunta
+        width 90%
+        height 30%
+        margin 10px 0
+        display flex
+        justify-content space-around
+        align-items: center
+        flex-wrap wrap
+
+        &-imagen
+          width 90px
+          height 90px
+          border-radius 50%
+
+        &-parrafo
+          width 60%
+          text-align center
+
+        &-llaves
+          margin 3px;
+          font-size 5em
+          color $colorGame4
+
+        &-palabra
+          height 3em
+          padding .5em 1em
+          margin 3px
+          background $colorHoja
+          border-radius 3px
+          text-transform uppercase
+          line-height 2em
+          text-align center
+          position relative
+          &:before
+            content:"";
+            position:absolute;
+            top:0;
+            right:0;
+            border-width:0 16px 16px 0;
+            border-style:solid;
+            border-color: darken($colorHoja, 30%) #fff;
+
+      // end cards
+
+      // input de respuesta
+      &-form
+        width 90%
+        display flex
+        flex-direction column
+        align-items center
+
+
+      &-respuesta
+        border 10px solid lightgray
+        background white
+        width 100%
+        line-height: 4em
+        border-radius: 5px
+        padding: 5px
+        margin-bottom: 10px
+        flex 1 1 80%
+        text-align center
+
+      // Botones solo tarjetas prejuego
+
+      &-enviar
+        font-size 1.2em
+        border none
+        display flex
+
+      &-seleccion
+        width 50%
+        margin-top 5px
+        display flex
+        justify-content center
+        align-items center
+
+
+        &-niveles
+          margin 0 8px
+          color $color1
+
+        &-actual
+          margin 0 8px
+          color $color3
+
+        & a
+          font-size 2em
+          color $color3
+
+
+// colores titulos juegos
+.titleJuego1
+  background $colorGame1
+
+.titleJuego2
+  background $colorGame2
+
+.titleJuego3
+  background $colorGame3
+
+.titleJuego4
+  background $colorGame4

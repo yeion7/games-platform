@@ -1,0 +1,12 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "winix",
+      "htmlOption": "jade",
+      "jsPreprocessor": "es6",
+      "cssOption": "stylus",
+      "testFramework": "none"
+    },
+    "version": "1.4.0"
+  }
+}

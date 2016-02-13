@@ -1,0 +1,48 @@
+mixin card(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    div(class="game-card-title titleJuego4")
+      div(class="adivinaPista_label")
+    div(class="game-card-body")
+      div(class="game-card-body-text")
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore labore perferendis autem veniam architecto 
+      
+      form(action="" class="game-card-body-form")
+        div(class="game-card-body-options")
+          div(class="game-card-body-adivinaPista")
+            span(class="game-card-body-adivinaPista__llaves") &#123;
+            span  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            span(class="game-card-body-adivinaPista__llaves") &#125;
+          input(type="text" class="game-card-body-respuesta" placeholder="Escribe tu respuesta")             
+        button(type="submit" class="game-card-body-enviar buttonPrimary") Jugar  
+          i(class="fa fa-play")
+          
+      div(class="game-card-body-seleccion")
+        a(href="../juego3/index.html") &lt;
+        span(class="game-card-body-seleccion-actual")  01 
+        span /
+        span(class="game-card-body-seleccion-niveles")  04 
+        a(href="../juego1/index.html") &gt;
+
+
+        //- div(class=spec.__class)&attributes(attributes)
+        //-   div(class="game-card-title titleJuego1")
+        //-     div(class="palabraLarga_label")
+        //-   div(class="game-card-body")
+        //-     div(class="game-card-body-help")
+        //-       div(class="game-card-body-help-iconcontainer")
+        //-         i(class="fa fa-search-plus game-card-body-help-icon" id="iconPista")
+        //-         label(for="iconPista") Pista
+        //-       span(class="game-card-body-help-text") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, unde.
+        //-     
+        //-     div(class="game-card-body-pregunta")
+        //- SE PUEDEN UTILIZAR ELEMENTOS DE TIPO IMAGEN, PALABRA, PARRAFO, LLAVES; 
+        //-       span(class="game-card-body-pregunta-palabra") palabra muy muy larga
+        //- 
+        //-     
+        //-     form(action="" class="game-card-body-form")
+        //-       div(class="game-card-body-options")
+        //-         input(type="text" class="game-card-body-respuesta" placeholder="Escribe tu respuesta")             
+        //-         

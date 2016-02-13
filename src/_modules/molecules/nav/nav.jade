@@ -1,0 +1,30 @@
+include ../../atoms/button/button.jade
+
+mixin nav(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  nav(class=spec.__class class="header-menu-nav")&attributes(attributes)
+    ul(class="header-menu-nav-items")
+      li(class="header-menu-nav-item")
+        a(class="header-menu-nav-link buttonNav" href="#") Perfil
+      li(class="header-menu-nav-item")
+        a(class="header-menu-nav-link buttonNav" href="#") Amigos
+      li(class="header-menu-nav-item")
+        a(class="header-menu-nav-link buttonNav" href="#") Premios
+      li(class="header-menu-nav-item" )
+        a(class="header-menu-nav-link buttonNav game-how" href="#" id="game-how") ¿Cómo se juega?
+        ul(class="header-menu-nav-items-how")
+          li(class="header-menu-nav-items-how-item")
+            a(class="header-menu-nav-items-how-item-link buttonNav" href="#") juego1
+          li(class="header-menu-nav-items-how-item")
+            a(class="header-menu-nav-items-how-item-link buttonNav" href="#") juego2
+          li(class="header-menu-nav-items-how-item")
+            a(class="header-menu-nav-items-how-item-link buttonNav" href="#") juego3
+          li(class="header-menu-nav-items-how-item")
+            a(class="header-menu-nav-items-how-item-link buttonNav" href="#") juego4
+        
+      li(class="header-menu-nav-item")
+        a(class="header-menu-nav-link buttonNav" href="#") Términos y Condiciones
+        
+    
