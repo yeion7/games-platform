@@ -1,0 +1,71 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Winix</title>
+  <meta name="description" content="A new Yeogurt application">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="header"><i id="toggleNav" class="icon-menu header-responsive"></i>
+    <div class="header-logos"><img src="../images/logo.png" class="header-logos-logo">
+      <div class="header-logos-line"></div><img src="../images/marca.png" class="header-logos-marca">
+    </div>
+    <div class="header-menu">
+      <nav class="header-menu-nav">
+        <ul class="header-menu-nav-items">
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Perfil</a></li>
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Amigos</a></li>
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Premios</a></li>
+          <li class="header-menu-nav-item"><a href="#" id="game-how" class="header-menu-nav-link buttonNav game-how">¿Cómo se juega?</a>
+            <ul class="header-menu-nav-items-how">
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego1</a></li>
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego2</a></li>
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego3</a></li>
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego4</a></li>
+            </ul>
+          </li>
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Términos y Condiciones</a></li>
+        </ul>
+      </nav><a id="login" class="header-menu-button buttonPrimary">Iniciar</a>
+      <div class="form-container">
+        <form class="form-login"><i class="icon-phone"></i>
+          <input placeholder="+569 111111111"><i class="icon-lock"></i>
+          <input type="password" placeholder="xxxx"><a type="submit" id="login" class="form-login-button"><i class="icon-arrow"></i></a><a href="#">olvidé mi contraseña</a><a href="#">registrate</a>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="juego fondo-naranja"><a href="#" class="juego-sala"><span class="juego-sala-text-open">SALA DE JUEGOS</span><span class="juego-sala-text-close">X</span></a>
+    <div id="juegosDisponibles" class="juego-sala-juegos"><img src="http://lorempixel.com/200/200/" class="juego-sala-juegos-juego"><img src="http://lorempixel.com/200/200/" class="juego-sala-juegos-juego"><img src="http://lorempixel.com/200/200/" class="juego-sala-juegos-juego"><img src="http://lorempixel.com/200/200/" class="juego-sala-juegos-juego"></div>
+    <div class="game-container"><img src="../images/character_prejuego.png" class="game-person">
+      <div class="game-card">
+        <div class="game-card-title titleJuego3">
+          <div class="adivinaImange_label"></div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-card-body-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore labore perferendis autem veniam architecto </p>
+          </div>
+          <form action="" class="game-card-body-form">
+            <div class="game-card-body-options"><img src="http://lorempixel.com/200/200/" alt="imagen" class="game-card-body-image">
+              <input placeholder="Escribe tu respuesta" class="game-card-body-respuesta">
+            </div>
+            <button type="submit" class="game-card-body-enviar buttonPrimary">Jugar  <i class="icon-play"></i></button>
+          </form>
+          <div class="game-card-body-seleccion"><a href="../juego2/index.html">&lt;</a><span class="game-card-body-seleccion-actual"> 03 </span><span>/</span><span class="game-card-body-seleccion-niveles"> 04 </span><a href="../juego4/index.html">&gt;</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../scripts/main.js"></script>
+</body></html>
