@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Se Juega</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/perfil.css">
+</head>
+<body>
+	<header class="header"><i id="toggleNav" class="icon-menu header-responsive"></i>
+    <div class="header-logos"><a href="/"><img src="./img/logo.png" class="header-logos-logo"></a>
+      <div class="header-logos-line"></div><a href="/"><img src="./img/marca.png" class="header-logos-marca"></a>
+    </div>
+    <div class="header-menu">
+      <nav class="header-menu-nav">
+        <ul class="header-menu-nav-items">
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Perfil</a></li>
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Amigos</a></li>
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Premios</a></li>
+          <li class="header-menu-nav-item"><a href="#" id="game-how" class="header-menu-nav-link buttonNav game-how">¿Cómo se juega?</a>
+            <ul class="header-menu-nav-items-how">
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego1</a></li>
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego2</a></li>
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego3</a></li>
+              <li class="header-menu-nav-items-how-item"><a href="#" class="header-menu-nav-items-how-item-link buttonNav">juego4</a></li>
+            </ul>
+          </li>
+          <li class="header-menu-nav-item"><a href="#" class="header-menu-nav-link buttonNav">Términos y Condiciones</a></li>
+        </ul>
+      </nav><a id="login" class="header-menu-button buttonPrimary">Iniciar</a>
+      <div class="form-container">
+        <form class="form-login"><i class="icon-phone"></i>
+          <input placeholder="+569 111111111"><i class="icon-lock"></i>
+          <input type="password" placeholder="xxxx"><a type="submit" id="login" class="form-login-button"><i class="icon-arrow"></i></a><a href="#">olvidé mi contraseña</a><a href="#">registrate</a>
+        </form>
+      </div>
+    </div>
+  </header>
+
+	<section class="profile">
+		<div class="room-games">
+			<a href="#">Sala de Juegos</a>
+		</div>
+		<div class="container text-center awards-container">
+			<h1 class="title">Premios</h1>
+			<div class="level">
+				<div class="current-points">
+					<img src="./img/avatar1.png" class="profile-avatar border-orange">
+					<h2>6.337</h2>
+					<span>Puntos</span>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-orange" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+				    <span class="sr-only">20% Complete</span>
+				  </div>
+				</div>
+				<span class="points-first text-orange">3000</span>
+				<span class="points-center text-orange">7000</span>
+				<span class="points-last text-gray">20000</span>
+			</div>
+			<div class="awards">
+				<div class="col-lg-4 col-sm-12">
+						<img src="./img/gift.png">
+				</div>
+				<div class="col-lg-8 col-sm-12">
+					<div class="awards-list">
+						<div class="award">
+							<img src="./img/lock.png">
+							<p>Consola PS4 500GB + Uncharted Collection (descargable)
+							<a href="#">Desbloquear</a></p>
+						</div>
+						<div class="award">
+							<img src="./img/lock.png">
+							<p>Camiseta Seleccion de Chile 2015 Nike
+							<a href="#">Desbloquear</a></p>
+						</div>
+					</div>
+					<div class="awards-list">
+						<div class="award">
+							<img src="./img/premio1.png">
+							<p>Consola PS4 500GB + Uncharted Collection (descargable)
+							<a href="#">Reclamar</a></p>
+						</div>
+						<div class="award">
+							<img src="./img/premio2.png">
+							<p>Camiseta Seleccion de Chile 2015 Nike
+							<a href="#">Reclamar</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
