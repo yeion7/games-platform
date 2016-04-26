@@ -66,14 +66,9 @@ $(function(){
 		$('body').append(modalVs);
 	})
 
-	$('#login').click(function(){
-	  $('.form-container').slideToggle('show','linear');
-	});
-
 	$('#game-how').click(function(){
 	  $('.header-menu-nav-items-how').slideToggle('show','linear');
 	});
-
 
 	$('#toggleNav').click(function(){
 	  $('.header-menu-nav-items').toggleClass('show');
@@ -82,7 +77,7 @@ $(function(){
 	$('#login').click(function () {
 	  $('.form-container').slideToggle('show', 'linear');
 	});
-
+	//
 	$('#toggleNav').click(function () {
 	  $('.header-menu-nav-items').toggleClass('hidden');
 	});
@@ -116,10 +111,6 @@ $(function(){
 
 	$('#iconPista').click(function () {
 	  $('.game-card-body-help-text').fadeToggle('show', 'linear');
-	});
-
-	$('#game-how').click(function () {
-	  $('.header-menu-nav-items-how').slideToggle('show', 'linear');
 	});
 
 });

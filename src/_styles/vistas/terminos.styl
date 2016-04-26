@@ -1,0 +1,97 @@
+.terms{
+	position: relative;
+}
+.terms-banner{
+	height: 260px;
+	background-color: #19a496;
+	background-image: url('../img/trama.png');
+	background-size: 100% 260px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.terms-title{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	font-family: "Roboto-Light";
+	color: white;
+	text-align: center;
+}
+
+.terms-character{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	display: none;
+	height: 260px;
+	background-image: url('../img/character.png');
+	background-size: 600px;
+	background-position: 0 14%;
+}
+
+.terms-details{
+	margin-top: 40px;
+}
+
+.panel{
+	border: 0px;
+}
+
+.panel-default > .panel-heading{
+	background: transparent;
+}
+
+.panel-title a>span{
+	display: none;
+	width: 20px;
+	height: 20px;
+	color: white;
+	text-align: center;
+	border-radius: 7px;
+	padding-top: 2px;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+
+.panel-title a:hover{
+	text-decoration: none;
+}
+
+.panel-title a.collapsed >span.fa-caret-down{
+	display: inline-block;
+}
+.panel-title a:not(.collapsed) >span.fa-caret-down{
+	display: none;
+}
+.panel-title a.collapsed >span.fa-caret-up{
+	display: none;
+}
+.panel-title a:not(.collapsed) >span.fa-caret-up{
+	display: inline-block;
+}
+
+.panel-body{
+	border-top: 0px !important;
+}
+
+@media (min-width: 750px){
+	.terms-banner{
+		background-size: 100%;
+		background-position: 0 10%;
+	}
+	.terms-title{
+		top: 100px;
+	}
+	.terms-character{
+		display: block;
+		width: 300px;
+	}
+}
+
+@media (min-width: 970px){
+	.terms-character{
+		width: 600px;
+	}
+}
+
